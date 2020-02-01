@@ -59,7 +59,6 @@ export default function Chat() {
   }, []);
 
   function handleKeyPress(event) {
-    debugger;
     if (event.key === 'Enter' && newMessage !== '') {
       handleClickButton();
     }
