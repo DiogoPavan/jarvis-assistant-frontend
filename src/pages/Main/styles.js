@@ -1,23 +1,24 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 800px;
+  max-width: 500px;
+  height: 100vh;
   padding: 25px;
-  margin: 150px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #ff5500;
-  border-radius: 10px;
+  color: #fff;
+  background: rgba(255, 55, 0, 0.9);
 
   h1 {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 40px;
   }
 
   h3 {
     font-size: 20px;
+    text-align: center;
     margin-bottom: 60px;
   }
 
@@ -28,14 +29,14 @@ export const Container = styled.div`
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    background: #fff;
-    color: #ff5500;
-    border: 2px solid #ff5500;
+    background: #00bfff;
+    color: #fff;
+    border: 0;
     transition: background 0.2s;
 
     &:hover {
-      background: #ff5500;
-      color: #fff;
+      background: #fff;
+      color: #00bfff;
     }
   }
 `;
