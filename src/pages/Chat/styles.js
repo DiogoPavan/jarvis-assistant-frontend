@@ -9,7 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   color: #000;
-  background: rgb(255, 55, 0);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 `;
 
@@ -60,8 +60,33 @@ export const MessageSender = styled.div`
 `;
 
 export const ListMessage = styled.ul`
-  padding-top: 30px;
-  margin-top: 30px;
-  border-top: 1px solid #eee;
+  margin: 10px;
   list-style: none;
+  max-height: 90%;
+  overflow: auto;
+
+  li {
+    display: inline-block;
+    clear: both;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 75%;
+
+    & + li {
+      margin-top: 15px;
+    }
+  }
+`;
+
+export const MsgJarvis = styled.li`
+  color: #000;
+  background: #6dd5ed;
+  float: left;
+`;
+
+export const MsgUser = styled.li`
+  color: #000;
+  background: #dbf4c6;
+  float: right;
+  margin-right: 5px;
 `;

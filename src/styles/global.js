@@ -14,7 +14,7 @@ export default createGlobalStyle`
  }
 
  body {
-   background: #000 url(${bgimage}) no-repeat center;
+   background: rgba(255, 55, 0, 0.9) url(${bgimage}) no-repeat center;
    background-size: cover;
    -webkit-font-smoothing: antialiased !important;
  }
